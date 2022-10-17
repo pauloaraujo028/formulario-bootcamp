@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1 id="title">Formulário de Pesquisa</h1>
+    <p id="description">Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma</p>
+
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Nome <input id="name" type="text" name="name" required  placeholder="Digite seu nome" /></label>
+            <label id="email-label">E-mail <input id="email" type="email" name="email" required placeholder="Digite seu e-mail" /></label>
+            <label id="number-label">Idade <input id="number" type="number" name="idade" min="15" max="120" placeholder="Digite sua idade" /></label>
+            <br>
+            <label>Qual opção melhor descreve sua função atual?
+                <select id="dropdown" name="funcao">
+                    <option value="">Selecione a função atual</option>
+                    <option value="1">Estudante</option>
+                    <option value="2">Programador front-end</option>
+                    <option value="3">Programador back-end</option>
+                    <option value="4">Programador full stack</option>
+                    <option value="4">Programador mobile</option>
+                </select>
+            </label>
+            <br>
+            <label>Qual o seu status atual?</label>
+            <label><input type="radio" name="account-type" class="inline" value="value" /> Estagiário</label>
+            <label><input type="radio" name="account-type" class="inline" value="value" /> Jr</label>
+            <label><input type="radio" name="account-type" class="inline" value="value" /> Pleno</label>
+            <label><input type="radio" name="account-type" class="inline" value="value" /> Sênior</label>
+            <br>
+            <label>Qual sua principal linguagem de programação? <input id="prog" type="text" name="prog" placeholder="Digite aqui" /></label>
+            </label>
+            <br>
+            <label>Quais outras linguagens ou frameworks ? (Marque todos os que se aplicam)</label>
+            <label><input type="checkbox" name="skills" class="inline" required value="value" />C#</label>
+            <label><input type="checkbox" name="skills" class="inline" required value="value" />C++</label>
+            <label><input type="checkbox" name="skills" class="inline" required value="value" />JavaScript</label>
+            <label><input type="checkbox" name="skills" class="inline" required value="value" />PHP</label>
+            <label><input type="checkbox" name="skills" class="inline" required value="value" />Python</label>
+            <label><input type="checkbox" name="skills" class="inline" required value="value" />Java</label>
+            <label><input type="checkbox" name="skills" class="inline" required value="value" />React.js</label>
+            <label><input type="checkbox" name="skills" class="inline" required value="value" />Vue.js</label>
+            <label><input type="checkbox" name="skills" class="inline" required value="value" />Angular</label>
+            <label><input type="checkbox" name="skills" class="inline" required value="value" />Ember.js</label>
+            <br>
+            <label>Algum comentário ou sugestão?
+                <textarea name="bio" rows="10" cols="30" placeholder="Digite seu comentário aqui..."></textarea>
+            </label>
+            <br>
+            <input id="submit" type="submit" value="Enviar" />
+        </fieldset>
+    </form>
+    
+</body>
+</html>
